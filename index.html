@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infos changement climatique</title>
+  <meta name="description" content="Les chiffres clés du réchauffement climatique en France et dans le monde, issus du GIEC, de Météo-France, du Citepa, du SDES et de Santé publique France.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000;
+      --fg: #fff;
+      --muted: #a8a8a8;
+      --border: #fff;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Kanit", system-ui, sans-serif;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+
+    header {
+      position: relative;
+      padding: 48px 16px 44px;
+      text-align: center;
+      background: var(--bg);
+      box-shadow: 0 24px 50px rgba(255, 255, 255, 0.12);
+    }
+
+    h1, h2 {
+      font-family: "Bebas Neue", Impact, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 3rem); }
+    h2 { font-size: clamp(1.7rem, 3.5vw, 2.2rem); margin-bottom: 28px; }
+
+    header p {
+      margin: 8px auto 0;
+      max-width: 640px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    main {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 72px 48px 32px;
+    }
+
+    section { margin-bottom: 64px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
+      gap: 24px;
+      padding-left: 24px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      border: 3px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 16px 14px;
+    }
+
+    .value {
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .value small { font-size: 1.1rem; }
+
+    .label {
+      margin: 12px 0 14px;
+      font-size: 0.95rem;
+      flex-grow: 1;
+    }
+
+    .source {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .source a { text-underline-offset: 2px; }
+
+    .note {
+      padding-left: 24px;
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      max-width: 820px;
+    }
+
+    footer {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 48px 56px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer h2 { color: var(--fg); font-size: 1.6rem; margin-bottom: 12px; }
+    footer ol { padding-left: 20px; }
+    footer li { margin-bottom: 6px; }
+
+    @media (max-width: 640px) {
+      main { padding: 48px 16px 16px; }
+      footer { padding: 0 16px 40px; }
+      .cards { padding-left: 0; gap: 16px; }
+      .note { padding-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Infos changement climatique</h1>
+    <p>Les chiffres clés, issus uniquement de sources scientifiques et officielles.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="france">
+      <h2 id="france">Data France</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="value">+ 2,2 °C</div>
+          <p class="label">de réchauffement en France sur la dernière décennie, par rapport au début du XX<sup>e</sup> siècle (1900-1930)</p>
+          <p class="source">Source : <a href="#src-hcc">Haut Conseil pour le Climat, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">40 <small>Gt</small></div>
+          <p class="label">milliards de tonnes de CO<sub>2</sub> émises par la France depuis la révolution industrielle, soit 2,2 % du cumul mondial</p>
+          <p class="source">Source : <a href="#src-gcp">Global Carbon Project, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">563 <small>Mt</small></div>
+          <p class="label">millions de tonnes de CO<sub>2</sub>e d'empreinte carbone en 2024, importations comprises (8,2 t par habitant)</p>
+          <p class="source">Source : <a href="#src-sdes">SDES, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">359 <small>Mt</small></div>
+          <p class="label">millions de tonnes de CO<sub>2</sub>e émises sur le territoire en 2025 (estimation), −32 % depuis 1990</p>
+          <p class="source">Source : <a href="#src-citepa">Citepa, Secten 2026</a></p>
+        </article>
+        <article class="card">
+          <div class="value">× 10</div>
+          <p class="label">10 fois plus de records de chaleur que de records de froid battus en 2025</p>
+          <p class="source">Source : <a href="#src-mf">Météo-France, 2026</a></p>
+        </article>
+        <article class="card">
+          <div class="value">5 700</div>
+          <p class="label">décès attribuables à la chaleur pendant l'été 2025</p>
+          <p class="source">Source : <a href="#src-spf">Santé publique France, 2026</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="monde">
+      <h2 id="monde">Data Monde (GIEC)</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="value">+ 1,1 °C</div>
+          <p class="label">de réchauffement mondial en 2011-2020 par rapport à 1850-1900</p>
+          <p class="source">Source : <a href="#src-giec-syr">GIEC, AR6 Synthèse</a></p>
+        </article>
+        <article class="card">
+          <div class="value">+ 1,55 °C</div>
+          <p class="label">en 2024, première année civile au-dessus de 1,5 °C</p>
+          <p class="source">Source : <a href="#src-omm">OMM, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">2 400 <small>Gt</small></div>
+          <p class="label">milliards de tonnes de CO<sub>2</sub> émises par l'humanité entre 1850 et 2019</p>
+          <p class="source">Source : <a href="#src-giec-wg3">GIEC, AR6 GT III</a></p>
+        </article>
+        <article class="card">
+          <div class="value">500 <small>Gt</small></div>
+          <p class="label">de CO<sub>2</sub> : budget restant au 1<sup>er</sup> janvier 2020 pour 50 % de chances de rester sous 1,5 °C</p>
+          <p class="source">Source : <a href="#src-giec-wg1">GIEC, AR6 GT I</a></p>
+        </article>
+        <article class="card">
+          <div class="value">+ 20 <small>cm</small></div>
+          <p class="label">d'élévation du niveau moyen des mers entre 1901 et 2018</p>
+          <p class="source">Source : <a href="#src-giec-wg1">GIEC, AR6 GT I</a></p>
+        </article>
+        <article class="card">
+          <div class="value">3,3 <small>Md</small></div>
+          <p class="label">à 3,6 milliards de personnes vivent dans des contextes très vulnérables au changement climatique</p>
+          <p class="source">Source : <a href="#src-giec-wg2">GIEC, AR6 GT II</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="politique">
+      <h2 id="politique">Politique</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="value">1 890 <small>Mt</small></div>
+          <p class="label">de CO<sub>2</sub> émises sous le mandat de Nicolas Sarkozy (2007-2011), soit 378 Mt par an</p>
+          <p class="source">Source : <a href="#src-gcp">Global Carbon Project, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">1 714 <small>Mt</small></div>
+          <p class="label">de CO<sub>2</sub> émises sous le mandat de François Hollande (2012-2016), soit 343 Mt par an</p>
+          <p class="source">Source : <a href="#src-gcp">Global Carbon Project, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">2 396 <small>Mt</small></div>
+          <p class="label">de CO<sub>2</sub> émises sous les mandats d'Emmanuel Macron (2017-2024), soit 300 Mt par an</p>
+          <p class="source">Source : <a href="#src-gcp">Global Carbon Project, 2025</a></p>
+        </article>
+      </div>
+      <p class="note">Méthode : émissions territoriales de CO<sub>2</sub> fossile et ciment, hors importations et hors autres gaz à effet de serre. Chaque mandat est arrondi aux années civiles complètes à partir de l'année d'élection ; les années 2025 et suivantes ne sont pas encore publiées. Les mandats n'ont pas la même durée : comparez plutôt la moyenne annuelle. La baisse dépend aussi de facteurs extérieurs à l'action publique (crises économiques, météo, Covid-19 en 2020).</p>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Sources</h2>
+    <ol>
+      <li id="src-hcc">Haut Conseil pour le Climat, <a href="https://www.hautconseilclimat.fr/publications/">rapport annuel 2025</a>.</li>
+      <li id="src-gcp">Global Carbon Project, Global Carbon Budget 2025, via <a href="https://github.com/owid/co2-data">Our World in Data</a> (CO<sub>2</sub> fossile et ciment, cumul depuis 1750).</li>
+      <li id="src-sdes">SDES (ministère de la Transition écologique), <a href="https://www.statistiques.developpement-durable.gouv.fr/lempreinte-carbone-de-la-france-de-1990-2024">L'empreinte carbone de la France de 1990 à 2024</a>, octobre 2025.</li>
+      <li id="src-citepa">Citepa, <a href="https://www.citepa.org/le-rapport-secten-edition-2026-est-en-ligne/">rapport Secten, édition 2026</a> (hors puits de carbone, estimation provisoire pour 2025).</li>
+      <li id="src-mf">Météo-France, <a href="https://meteofrance.fr/sites/meteofrance.fr/files/files/editorial/bilan_climatique_2025-V3.4-web.pdf">bilan climatique 2025</a>.</li>
+      <li id="src-spf">Santé publique France, <a href="https://www.santepubliquefrance.fr/sites/default/files/rdd/document/bullnat_chaleur_bilan_2025.pdf">Chaleur et santé, bilan de l'été 2025</a>, édition France hexagonale, 26 février 2026.</li>
+      <li id="src-giec-syr">GIEC, <a href="https://www.ipcc.ch/report/ar6/syr/">AR6, Rapport de synthèse</a>, 2023 (SPM A.1).</li>
+      <li id="src-giec-wg1">GIEC, <a href="https://www.ipcc.ch/report/ar6/wg1/">AR6, Groupe de travail I</a>, 2021 (SPM A.1.7 et D.1.2).</li>
+      <li id="src-giec-wg2">GIEC, <a href="https://www.ipcc.ch/report/ar6/wg2/">AR6, Groupe de travail II</a>, 2022 (SPM B.2).</li>
+      <li id="src-giec-wg3">GIEC, <a href="https://www.ipcc.ch/report/ar6/wg3/">AR6, Groupe de travail III</a>, 2022 (SPM B.1.3).</li>
+      <li id="src-omm">Organisation météorologique mondiale, <a href="https://wmo.int/publication-series/state-of-global-climate-2024">State of the Global Climate 2024</a>, mars 2025.</li>
+    </ol>
+  </footer>
+</body>
+</html>

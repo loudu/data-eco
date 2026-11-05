@@ -5,7 +5,7 @@ Site statique présentant les chiffres clés du réchauffement climatique, sur q
 - `index.html` : Climat (données France, Monde, Politique)
 - `economie.html` : Économie (coût des dégâts, énergies fossiles, investissements, compagnies pétrolières)
 - `culture.html` : Culture (cultures agricoles menacées, patrimoine)
-- `fortune.html` : Fortune (répartition des richesses et des émissions)
+- `fortunes.html` : Fortunes (grandes fortunes françaises et leur empreinte carbone)
 
 Le style commun est dans `style.css` et le comportement du menu dans `menu.js`.
 
@@ -17,7 +17,7 @@ Ouvrir `index.html` dans un navigateur. Aucun build n'est nécessaire ; la page 
 
 ## Mise à jour des chiffres
 
-Les valeurs sont écrites directement dans `index.html`, `economie.html`, `culture.html` et `fortune.html`. Les publications de référence sont annuelles :
+Les valeurs sont écrites directement dans `index.html`, `economie.html`, `culture.html` et `fortunes.html`. Les publications de référence sont annuelles :
 
 - Météo-France (bilan climatique) : janvier
 - Santé publique France (bilan chaleur) : fin d'hiver

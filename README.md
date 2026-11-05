@@ -1,6 +1,11 @@
 # Infos changement climatique
 
-Site OnePage statique (`index.html`) présentant les chiffres clés du réchauffement climatique en France et dans le monde.
+Site statique présentant les chiffres clés du réchauffement climatique, sur deux pages accessibles depuis le menu burger en haut à droite :
+
+- `index.html` : Climat (données France, Monde, Politique)
+- `economie.html` : Économie (coût des dégâts, énergies fossiles, investissements)
+
+Le style commun est dans `style.css` et le comportement du menu dans `menu.js`.
 
 Toutes les données proviennent de sources scientifiques ou officielles, listées en bas de page : GIEC (AR6), OMM, Haut Conseil pour le Climat, Météo-France, Citepa, SDES, Santé publique France et Global Carbon Project.
 
@@ -10,7 +15,7 @@ Ouvrir `index.html` dans un navigateur. Aucun build n'est nécessaire ; la page 
 
 ## Mise à jour des chiffres
 
-Les valeurs sont écrites directement dans `index.html`. Les publications de référence sont annuelles :
+Les valeurs sont écrites directement dans `index.html` et `economie.html`. Les publications de référence sont annuelles :
 
 - Météo-France (bilan climatique) : janvier
 - Santé publique France (bilan chaleur) : fin d'hiver

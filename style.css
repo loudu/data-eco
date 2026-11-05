@@ -1,0 +1,214 @@
+:root {
+  --bg: #000;
+  --fg: #fff;
+  --muted: #a8a8a8;
+  --border: #fff;
+  --radius: 14px;
+  --hover: #1f1f1f;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Kanit", system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+a { color: inherit; }
+
+header {
+  position: relative;
+  padding: 48px 72px 44px;
+  text-align: center;
+  background: var(--bg);
+  box-shadow: 0 24px 50px rgba(255, 255, 255, 0.12);
+}
+
+h1, h2 {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.7rem, 3.5vw, 2.2rem); margin-bottom: 28px; }
+
+header p {
+  margin: 8px auto 0;
+  max-width: 640px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+main {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 72px 48px 32px;
+}
+
+section { margin-bottom: 64px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
+  gap: 24px;
+  padding-left: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 16px 14px;
+}
+
+.value {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.value small { font-size: 1.1rem; }
+
+.label {
+  margin: 12px 0 14px;
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.source {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.source a { text-underline-offset: 2px; }
+
+.subhead {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  margin: 48px 0 20px 24px;
+}
+
+.note {
+  padding-left: 24px;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  max-width: 820px;
+}
+
+footer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 48px 56px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer h2 { color: var(--fg); font-size: 1.6rem; margin-bottom: 12px; }
+footer ol { padding-left: 20px; }
+footer li { margin-bottom: 6px; }
+footer h2 + ol, footer h2 + p { margin-top: 0; }
+.methodo { margin-top: 48px; }
+.methodo h3 {
+  font-family: "Kanit", system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--fg);
+  margin: 24px 0 8px;
+}
+.methodo p, .methodo ul { margin: 0 0 8px; max-width: 820px; }
+.methodo ul { padding-left: 20px; }
+
+/* Menu burger */
+.menu {
+  position: absolute;
+  top: 16px;
+  right: max(16px, env(safe-area-inset-right, 0px));
+  z-index: 20;
+  text-align: left;
+}
+
+.menu summary {
+  list-style: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu summary::-webkit-details-marker { display: none; }
+
+.menu summary:focus-visible,
+.menu a:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+
+.bars,
+.bars::before,
+.bars::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--fg);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.bars { position: relative; }
+.bars::before, .bars::after { content: ""; position: absolute; left: 0; }
+.bars::before { top: -6px; }
+.bars::after { top: 6px; }
+
+.menu[open] .bars { background: transparent; }
+.menu[open] .bars::before { transform: translateY(6px) rotate(45deg); }
+.menu[open] .bars::after { transform: translateY(-6px) rotate(-45deg); }
+
+.menu nav {
+  position: absolute;
+  top: 54px;
+  right: 0;
+  min-width: 200px;
+  padding: 8px;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.menu ul { list-style: none; margin: 0; padding: 0; }
+
+.menu a {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.menu a:hover { background: var(--hover); }
+.menu a[aria-current="page"] { text-decoration: underline; text-underline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bars, .bars::before, .bars::after { transition: none; }
+}
+
+@media (max-width: 640px) {
+  header { padding: 32px 68px 32px; }
+  main { padding: 48px 16px 16px; }
+  footer { padding: 0 16px 40px; }
+  .cards { padding-left: 0; gap: 16px; }
+  .note { padding-left: 0; }
+  .subhead { margin-left: 0; }
+}

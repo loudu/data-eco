@@ -99,6 +99,8 @@ section { margin-bottom: 64px; }
   margin: 48px 0 20px 24px;
 }
 
+h2 + .subhead { margin-top: 0; }
+
 .note {
   padding-left: 24px;
   margin-top: 20px;

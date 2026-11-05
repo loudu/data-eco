@@ -26,8 +26,9 @@
   </header>
 
   <main>
-    <section aria-labelledby="degats">
-      <h2 id="degats">Coût des dégâts</h2>
+    <section aria-labelledby="france">
+      <h2 id="france">Data France</h2>
+      <h3 class="subhead" id="fr-degats">Coût des dégâts</h3>
       <div class="cards">
         <article class="card">
           <div class="value">5 <small>Md€</small></div>
@@ -45,10 +46,8 @@
           <p class="source">Source : <a href="#src-fa-2050">France Assureurs, 2021</a></p>
         </article>
       </div>
-    </section>
 
-    <section aria-labelledby="fossiles">
-      <h2 id="fossiles">Énergies fossiles</h2>
+      <h3 class="subhead" id="fr-fossiles">Énergies fossiles</h3>
       <div class="cards">
         <article class="card">
           <div class="value">57,8 <small>Md€</small></div>
@@ -66,10 +65,8 @@
           <p class="source">Source : <a href="#src-sdes-energie">SDES</a></p>
         </article>
       </div>
-    </section>
 
-    <section aria-labelledby="transition">
-      <h2 id="transition">Investir dans la transition</h2>
+      <h3 class="subhead" id="fr-transition">Investir dans la transition</h3>
       <div class="cards">
         <article class="card">
           <div class="value">102 <small>Md€</small></div>
@@ -88,6 +85,72 @@
         </article>
       </div>
     </section>
+
+    <section aria-labelledby="monde">
+      <h2 id="monde">Data Monde</h2>
+
+      <h3 class="subhead">Coût des dégâts</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">224 <small>Md$</small></div>
+          <p class="label">de pertes dues aux catastrophes naturelles dans le monde en 2025, dont 108 Md$ assurés</p>
+          <p class="source">Source : <a href="#src-munichre">Munich Re, 2026</a></p>
+        </article>
+        <article class="card">
+          <div class="value">368 <small>Md$</small></div>
+          <p class="label">de pertes en 2024, dont 147 Md$ assurés (montants corrigés de l'inflation)</p>
+          <p class="source">Source : <a href="#src-munichre">Munich Re, 2026</a></p>
+        </article>
+        <article class="card">
+          <div class="value">53 <small>Md$</small></div>
+          <p class="label">pour les incendies de Los Angeles de janvier 2025, la catastrophe la plus coûteuse de l'année</p>
+          <p class="source">Source : <a href="#src-munichre">Munich Re, 2026</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Énergie</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">3 300 <small>Md$</small></div>
+          <p class="label">investis dans l'énergie dans le monde en 2025, un record</p>
+          <p class="source">Source : <a href="#src-aie">AIE, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">2 200 <small>Md$</small></div>
+          <p class="label">pour les énergies propres (renouvelables, nucléaire, réseaux, stockage, efficacité)</p>
+          <p class="source">Source : <a href="#src-aie">AIE, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">1 100 <small>Md$</small></div>
+          <p class="label">pour le pétrole, le gaz et le charbon, deux fois moins que pour les énergies propres</p>
+          <p class="source">Source : <a href="#src-aie">AIE, 2025</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Prix du carbone et solidarité</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">≈ 28 %</div>
+          <p class="label">des émissions mondiales de gaz à effet de serre soumises à un prix du carbone (taxe ou marché de quotas)</p>
+          <p class="source">Source : <a href="#src-bm">Banque mondiale, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">107 <small>Md$</small></div>
+          <p class="label">de recettes publiques tirées des taxes carbone et des marchés de quotas en 2025</p>
+          <p class="source">Source : <a href="#src-bm">Banque mondiale, 2026</a></p>
+        </article>
+        <article class="card">
+          <div class="value">115,9 <small>Md$</small></div>
+          <p class="label">de financements climat des pays riches vers les pays en développement en 2022, première année au-dessus de l'objectif de 100 Md$</p>
+          <p class="source">Source : <a href="#src-ocde">OCDE, 2024</a></p>
+        </article>
+        <article class="card">
+          <div class="value">300 <small>Md$</small></div>
+          <p class="label">par an d'ici 2035 : nouvel objectif de financement climat adopté à la COP29 de Bakou</p>
+          <p class="source">Source : <a href="#src-cop29">ONU Climat (CCNUCC), 2024</a></p>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -98,6 +161,11 @@
       <li id="src-sdes-energie">SDES (ministère de la Transition écologique), <a href="https://www.statistiques.developpement-durable.gouv.fr/bilan-energetique-de-la-france-pour-2024">Bilan énergétique de la France pour 2024</a>.</li>
       <li id="src-i4ce">I4CE (Institut de l'économie pour le climat), <a href="https://www.i4ce.org/wp-content/uploads/2025/07/Panorama-des-financements-climat-ed-2025_Synthese-et-resultats.pdf">Panorama des financements climat, édition 2025</a>.</li>
       <li id="src-pfm">Jean Pisani-Ferry et Selma Mahfouz, <a href="https://www.melchior.fr/sites/melchior/files/fichiers/Incidences%20e%CC%81co%20action%20climat%20France%20Strategie.pdf">Les incidences économiques de l'action pour le climat</a>, France Stratégie, mai 2023.</li>
+      <li id="src-munichre">Munich Re, bilan des catastrophes naturelles 2025, janvier 2026 (relayé par <a href="https://www.insurancejournal.com/news/international/2026/01/13/854041.htm">Insurance Journal</a>).</li>
+      <li id="src-aie">Agence internationale de l'énergie (AIE), <a href="https://www.iea.org/reports/world-energy-investment-2025">World Energy Investment 2025</a>, juin 2025.</li>
+      <li id="src-bm">Banque mondiale, <a href="https://www.worldbank.org/en/news/press-release/2025/06/10/global-carbon-pricing-mobilizes-over-100-billion-for-public-budgets">State and Trends of Carbon Pricing 2025</a> (couverture) et édition 2026 (recettes 2025).</li>
+      <li id="src-ocde">OCDE, Climate Finance Provided and Mobilised by Developed Countries in 2013-2022, mai 2024 (relayé par <a href="https://www.vie-publique.fr/node/296316">Vie publique</a>).</li>
+      <li id="src-cop29">CCNUCC, décision de la COP29 sur le nouvel objectif collectif quantifié de financement climat, Bakou, novembre 2024 (voir <a href="https://www.connaissancedesenergies.org/afp/cop29-les-principaux-points-de-laccord-arrache-bakou-241124">Connaissance des énergies / AFP</a>).</li>
     </ol>
 
     <section class="methodo" aria-labelledby="methodologie">
@@ -114,6 +182,14 @@
       <ul>
         <li><strong>I4CE</strong> recense chaque année les investissements publics et privés qui réduisent les émissions de gaz à effet de serre en France (rénovation des bâtiments, véhicules bas-carbone, infrastructures de transport, production d'énergie décarbonée).</li>
         <li><strong>Le rapport Pisani-Ferry et Mahfouz</strong>, commandé par la Première ministre, estime l'effort supplémentaire nécessaire pour atteindre l'objectif climatique de 2030 (−55 % d'émissions par rapport à 1990), par rapport à un scénario sans nouvelles mesures.</li>
+      </ul>
+
+      <h3>Data Monde</h3>
+      <ul>
+        <li><strong>Munich Re</strong>, l'un des premiers réassureurs mondiaux, publie chaque année le coût des catastrophes naturelles. Ses montants incluent les séismes et éruptions volcaniques, qui ne sont pas liés au climat ; les événements météorologiques (tempêtes, inondations, incendies, sécheresses) en représentent toutefois l'essentiel.</li>
+        <li><strong>L'AIE</strong> classe comme « énergies propres » les renouvelables, le nucléaire, les réseaux électriques, le stockage, les carburants bas-carbone, l'efficacité énergétique et l'électrification des usages. Les montants pour 2025 sont des estimations publiées en cours d'année.</li>
+        <li><strong>La Banque mondiale</strong> recense les taxes carbone et les marchés de quotas (comme le marché européen). La couverture indique la part des émissions mondiales concernées, quel que soit le niveau du prix, souvent bas.</li>
+        <li><strong>Le financement climat international</strong> compte les prêts et dons publics, et les capitaux privés mobilisés, des pays développés vers les pays en développement. Une grande partie est constituée de prêts, ce que contestent de nombreux pays bénéficiaires.</li>
       </ul>
 
       <h3>Mise à jour</h3>

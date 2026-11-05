@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cultures agricoles et climat</title>
+  <meta name="description" content="Les cultures agricoles menacées par le changement climatique en France et dans le monde, d'après des sources officielles et scientifiques.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <details class="menu">
+      <summary aria-label="Menu"><span class="bars"></span></summary>
+      <nav aria-label="Pages du site">
+        <ul>
+          <li><a href="index.html">Climat</a></li>
+          <li><a href="economie.html">Économie</a></li>
+          <li><a href="culture.html" aria-current="page">Culture</a></li>
+        </ul>
+      </nav>
+    </details>
+    <h1>Culture</h1>
+    <p>Les cultures agricoles menacées par le changement climatique.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="france">
+      <h2 id="france">Data France</h2>
+
+      <h3 class="subhead">Cultures menacées</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">6 <small>sur 10</small></div>
+          <p class="label">grandes cultures françaises dont les rendements stagnent depuis les années 1990 : blé tendre, blé dur, orge, avoine, tournesol et vigne</p>
+          <p class="source">Source : <a href="#src-schauberger">INRAE et LSCE, 2018</a></p>
+        </article>
+        <article class="card">
+          <div class="value">25 %</div>
+          <p class="label">au moins de leurs surfaces sont touchées par cette stagnation, alors que les rendements avaient été multipliés par 4 au XX<sup>e</sup> siècle</p>
+          <p class="source">Source : <a href="#src-schauberger">INRAE et LSCE, 2018</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Blé et vigne</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">1996</div>
+          <p class="label">année où les rendements du blé tendre cessent de progresser ; la hausse des températures et les sécheresses en compensent le progrès génétique</p>
+          <p class="source">Source : <a href="#src-brisson">INRA, 2010</a></p>
+        </article>
+        <article class="card">
+          <div class="value">25,6 <small>Mt</small></div>
+          <p class="label">de blé tendre récoltées en 2024, l'une des plus faibles récoltes depuis 40 ans, contre 35,1 Mt en 2023, après des pluies exceptionnelles</p>
+          <p class="source">Source : <a href="#src-agreste">Agreste, 2024</a></p>
+        </article>
+        <article class="card">
+          <div class="value">− 24 <small>jours</small></div>
+          <p class="label">les vendanges ont lieu 24 jours plus tôt que dans les années 1970 dans les vignobles suivis (Champagne, Alsace, Saint-Émilion…)</p>
+          <p class="source">Source : <a href="#src-mte-vendanges">Ministère de la Transition écologique</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="monde">
+      <h2 id="monde">Data Monde</h2>
+
+      <h3 class="subhead">Cultures menacées</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">4 <small>sur 4</small></div>
+          <p class="label">des cultures qui nourrissent le monde (maïs, blé, riz, soja) perdent du rendement à chaque degré de réchauffement</p>
+          <p class="source">Source : <a href="#src-zhao">Zhao et al., PNAS, 2017</a></p>
+        </article>
+        <article class="card">
+          <div class="value">− 21 %</div>
+          <p class="label">de productivité agricole mondiale depuis 1961 par rapport à un monde sans changement climatique</p>
+          <p class="source">Source : <a href="#src-ortiz">GIEC, AR6 GT II</a></p>
+        </article>
+        <article class="card">
+          <div class="value">Critique</div>
+          <p class="label">niveau de risque déjà atteint pour la production agricole du sud de l'Europe, face à la chaleur et à la sécheresse</p>
+          <p class="source">Source : <a href="#src-eea">Agence européenne pour l'environnement, 2024</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Perte de rendement par degré de réchauffement</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">− 7,4 %</div>
+          <p class="label">pour le maïs, à chaque degré de réchauffement mondial</p>
+          <p class="source">Source : <a href="#src-zhao">Zhao et al., PNAS, 2017</a></p>
+        </article>
+        <article class="card">
+          <div class="value">− 6,0 %</div>
+          <p class="label">pour le blé</p>
+          <p class="source">Source : <a href="#src-zhao">Zhao et al., PNAS, 2017</a></p>
+        </article>
+        <article class="card">
+          <div class="value">− 3,2 %</div>
+          <p class="label">pour le riz</p>
+          <p class="source">Source : <a href="#src-zhao">Zhao et al., PNAS, 2017</a></p>
+        </article>
+        <article class="card">
+          <div class="value">− 3,1 %</div>
+          <p class="label">pour le soja</p>
+          <p class="source">Source : <a href="#src-zhao">Zhao et al., PNAS, 2017</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Pertes et cultures tropicales</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">3 800 <small>Md$</small></div>
+          <p class="label">de récoltes et de production animale perdues à cause des catastrophes entre 1991 et 2021, soit 123 Md$ par an</p>
+          <p class="source">Source : <a href="#src-fao">FAO, 2023</a></p>
+        </article>
+        <article class="card">
+          <div class="value">69 <small>Mt</small></div>
+          <p class="label">de céréales perdues chaque année, l'équivalent de la récolte annuelle de la France</p>
+          <p class="source">Source : <a href="#src-fao">FAO, 2023</a></p>
+        </article>
+        <article class="card">
+          <div class="value">− 50 %</div>
+          <p class="label">des zones propices à la culture du café d'ici 2050</p>
+          <p class="source">Source : <a href="#src-cafe">CIRAD, 2023</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Sources</h2>
+    <ol>
+      <li id="src-schauberger">Schauberger, Ben-Ari, Makowski et al. (INRAE, LSCE), <a href="https://hal.inrae.fr/hal-02620950v1">Yield trends, variability and stagnation analysis of major crops in France over more than a century</a>, Scientific Reports, 2018.</li>
+      <li id="src-brisson">Brisson et al. (INRA), <a href="https://agris.fao.org/search/en/records/67dad7e0677d8be0233c155b">Why are wheat yields stagnating in Europe? A comprehensive data analysis for France</a>, Field Crops Research, 2010.</li>
+      <li id="src-agreste">Agreste (service statistique du ministère de l'Agriculture), estimations de la récolte 2024 de blé tendre (relayé par <a href="https://www.reussir.fr/moisson-2024-quand-agreste-estime-la-production-de-ble-tendre-263-mt-pour-2024">Réussir</a>) ; voir aussi la <a href="https://www.franceagrimer.fr/sites/default/files/2026-02/15_FICHE_FILIERE_BLE_TENDRE_2026.pdf">fiche filière blé tendre de FranceAgriMer</a>.</li>
+      <li id="src-mte-vendanges">Ministère de la Transition écologique, <a href="https://www.ecologie.gouv.fr/politiques-publiques/impacts-du-changement-climatique-agriculture-foret">Impacts du changement climatique : agriculture et forêt</a>.</li>
+      <li id="src-zhao">Zhao, Liu, Piao et al. (dont INRAE), <a href="https://hal.archives-ouvertes.fr/hal-01594919">Temperature increase reduces global yields of major crops in four independent estimates</a>, PNAS, 2017.</li>
+      <li id="src-ortiz">GIEC, <a href="https://www.ipcc.ch/report/ar6/wg2/">AR6, Groupe de travail II</a>, 2022, s'appuyant sur Ortiz-Bobea et al., Nature Climate Change, 2021.</li>
+      <li id="src-eea">Agence européenne pour l'environnement, <a href="https://www.eea.europa.eu/publications/european-climate-risk-assessment">European Climate Risk Assessment (EUCRA)</a>, mars 2024.</li>
+      <li id="src-fao">FAO (Organisation des Nations unies pour l'alimentation et l'agriculture), The Impact of Disasters on Agriculture and Food Security, octobre 2023 (relayé par <a href="https://www.downtoearth.org.in/agriculture/farmers-lost-3-8-trillion-to-disasters-over-30-years-fao-s-first-ever-global-estimation-92299">Down To Earth</a>).</li>
+      <li id="src-cafe">CIRAD, <a href="https://www.cirad.fr/en/content/download/9455/file/Rencontre%20scientifique%20sur%20les%20enjeux%20environnementaux%20de%20la%20fili%C3%A8re%20caf%C3%A9%20-%20novembre%202023.pdf">Rencontre scientifique sur les enjeux environnementaux de la filière café</a>, novembre 2023, citant Bunn et al., Climatic Change, 2014.</li>
+    </ol>
+
+    <section class="methodo" aria-labelledby="methodologie">
+      <h2 id="methodologie">Méthodologie</h2>
+      <p>Il n'existe pas de liste officielle des « cultures menacées ». Une culture est comptée ici comme menacée quand une institution publique ou une étude scientifique publiée montre que ses rendements stagnent ou baissent sous l'effet du climat, ou que les zones où elle peut pousser se réduisent. Chaque chiffre est repris tel que publié.</p>
+
+      <h3>Data France</h3>
+      <ul>
+        <li><strong>6 sur 10</strong> : l'étude de l'INRAE et du LSCE a analysé plus de 120 000 relevés de rendement entre 1900 et 2016 pour dix cultures, dans les 96 départements de métropole. Six cultures stagnent sur au moins un quart de leurs surfaces ; le maïs, la pomme de terre, le colza et la betterave ne stagnent pas. L'étude écarte l'hypothèse d'un plafond de rendement atteint, mais le climat n'est pas la seule cause possible.</li>
+        <li><strong>Blé</strong> : l'INRA attribue une grande partie de la stagnation depuis 1996 aux coups de chaleur pendant le remplissage du grain et aux sécheresses au printemps. La récolte 2024 illustre la sensibilité du blé aux extrêmes météorologiques (ici des pluies excessives) ; une année isolée ne fait pas une tendance.</li>
+        <li><strong>Vigne</strong> : la date des vendanges suit presque exactement la hausse des températures ; le ministère l'utilise comme indicateur du réchauffement.</li>
+      </ul>
+
+      <h3>Data Monde</h3>
+      <ul>
+        <li><strong>Perte par degré</strong> : l'étude publiée dans PNAS combine quatre méthodes (modèles, statistiques, expériences de terrain). Les chiffres supposent l'absence d'adaptation, de progrès génétique et d'effet fertilisant du CO<sub>2</sub> ; ils varient fortement selon les régions.</li>
+        <li><strong>− 21 %</strong> : ce chiffre mesure la productivité globale de l'agriculture (production par unité de terre, de travail et d'intrants), pas le volume des récoltes, qui a continué d'augmenter.</li>
+        <li><strong>FAO</strong> : les pertes couvrent toutes les catastrophes, y compris non climatiques (séismes, épidémies), mais les sécheresses, inondations et tempêtes en représentent la majeure partie.</li>
+        <li><strong>Café</strong> : estimation de modèles de répartition des cultures ; elle dépend du scénario d'émissions et des variétés cultivées.</li>
+      </ul>
+
+      <h3>Mise à jour</h3>
+      <p>Valeurs les plus récentes disponibles en novembre 2026.</p>
+    </section>
+  </footer>
+  <script src="menu.js"></script>
+</body>
+</html>

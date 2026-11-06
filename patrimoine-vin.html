@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrimoine vin</title>
+  <meta name="description" content="Le vignoble français face au changement climatique, région par région, d'après des sources officielles et scientifiques.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <details class="menu">
+      <summary aria-label="Menu"><span class="bars"></span></summary>
+      <nav aria-label="Pages du site">
+        <ul>
+          <li><a href="index.html">Climat</a></li>
+          <li><a href="economie.html">Économie</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="patrimoine-vin.html" aria-current="page">Patrimoine vin</a></li>
+          <li><a href="fortunes.html">Fortunes</a></li>
+        </ul>
+      </nav>
+    </details>
+    <h1>Patrimoine vin</h1>
+    <p>Le vignoble français face au changement climatique, région par région.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="france">
+      <h2 id="france">Data France</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="value">36 <small>Mhl</small></div>
+          <p class="label">de vin produits en France en 2025 (estimation), 16 % sous la moyenne des cinq dernières années, après la canicule d'août</p>
+          <p class="source">Source : <a href="#src-agreste-vin-2025">Agreste et FranceAgriMer, 2025</a></p>
+        </article>
+        <article class="card">
+          <div class="value">− 24 <small>jours</small></div>
+          <p class="label">les vendanges ont lieu 24 jours plus tôt que dans les années 1970 dans les vignobles suivis (Champagne, Alsace, Saint-Émilion…)</p>
+          <p class="source">Source : <a href="#src-mte-vendanges">Ministère de la Transition écologique</a></p>
+        </article>
+        <article class="card">
+          <div class="value">22 %</div>
+          <p class="label">des zones viticoles françaises ne seraient plus adaptées à la vigne avec + 2 °C de réchauffement mondial, même en changeant de cépages</p>
+          <p class="source">Source : <a href="#src-morales">INRAE, PNAS, 2020</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="regions">
+      <h2 id="regions">Régions viticoles</h2>
+      <h3 class="subhead" id="bordeaux">Bordeaux</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">15 <small>sept.</small></div>
+          <p class="label">date moyenne de début des vendanges à Saint-Émilion depuis 2010, contre le 26 septembre pendant la majeure partie du XX<sup>e</sup> siècle</p>
+          <p class="source">Source : <a href="#src-mte-vendanges">Ministère de la Transition écologique</a></p>
+        </article>
+        <article class="card">
+          <div class="value">6</div>
+          <p class="label">nouveaux cépages venus de régions plus chaudes (marselan, touriga nacional, arinarnoa…) autorisés dans les AOC Bordeaux pour s'adapter au climat</p>
+          <p class="source">Source : <a href="#src-inao-bordeaux">INAO, 2021</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead" id="bourgogne">Bourgogne et Beaujolais</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">− 13 <small>jours</small></div>
+          <p class="label">les vendanges de Beaune ont lieu 13 jours plus tôt depuis 1988 que la moyenne de 1354 à 1987 (28 septembre)</p>
+          <p class="source">Source : <a href="#src-labbe">Labbé et al., Climate of the Past, 2019</a></p>
+        </article>
+        <article class="card">
+          <div class="value">664 <small>ans</small></div>
+          <p class="label">de dates de vendanges relevées à Beaune, la plus longue série au monde : les années chaudes, exceptionnelles avant 1988, sont devenues la norme</p>
+          <p class="source">Source : <a href="#src-labbe">Labbé et al., Climate of the Past, 2019</a></p>
+        </article>
+        <article class="card">
+          <div class="value">≈ − 25 %</div>
+          <p class="label">de production de vin en Bourgogne et dans le Beaujolais en 2024 par rapport à 2023</p>
+          <p class="source">Source : <a href="#src-agreste-vin-2024">Agreste, 2024</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead" id="champagne">Champagne</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">6 <small>août</small></div>
+          <p class="label">début des vendanges 2026, les plus précoces jamais observées en Champagne, après des gels de printemps historiques et cinq canicules</p>
+          <p class="source">Source : <a href="#src-champagne">Comité Champagne, 2026</a></p>
+        </article>
+        <article class="card">
+          <div class="value">≈ − 2 <small>semaines</small></div>
+          <p class="label">les vendanges commencent environ deux semaines plus tôt qu'il y a vingt ans</p>
+          <p class="source">Source : <a href="#src-champagne">Comité Champagne</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead" id="alsace">Alsace</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">≈ − 5 <small>semaines</small></div>
+          <p class="label">les vendanges commençaient vers la mi-octobre à la fin des années 1980 ; elles débutent désormais avant le 10 septembre</p>
+          <p class="source">Source : <a href="#src-inrae-colmar">INRAE Colmar</a></p>
+        </article>
+        <article class="card">
+          <div class="value">− 23 <small>jours</small></div>
+          <p class="label">d'avance de la véraison (le moment où le raisin change de couleur) en 35 ans</p>
+          <p class="source">Source : <a href="#src-inrae-colmar">INRAE Colmar</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead" id="rhone">Vallée du Rhône</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">≈ − 1 <small>mois</small></div>
+          <p class="label">à Châteauneuf-du-Pape et Tavel, les vendanges commençaient dans la seconde moitié de septembre dans les années 1950, contre la seconde moitié d'août aujourd'hui</p>
+          <p class="source">Source : <a href="#src-pleinchamp">Pleinchamp, d'après des données publiques, 2026</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead" id="languedoc">Languedoc-Roussillon</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">480 000 <small>hl</small></div>
+          <p class="label">la plus petite récolte de l'histoire dans les Pyrénées-Orientales en 2023, après deux ans de sécheresse</p>
+          <p class="source">Source : <a href="#src-po-2023">presse viticole, 2023</a></p>
+        </article>
+        <article class="card">
+          <div class="value">30 à 60 %</div>
+          <p class="label">de pertes de récolte sur le littoral du Roussillon et de l'Aude en 2023</p>
+          <p class="source">Source : <a href="#src-po-2023">presse viticole, 2023</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead" id="loire">Val de Loire</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">− 30 %</div>
+          <p class="label">de production de vin en 2024 par rapport à 2023, après le gel, la grêle et le mildiou</p>
+          <p class="source">Source : <a href="#src-agreste-vin-2024">Agreste, 2024</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead" id="jura">Jura</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">− 71 %</div>
+          <p class="label">de production de vin dans le Jura en 2024 par rapport à 2023, après le gel de printemps, la grêle et les maladies favorisées par la pluie</p>
+          <p class="source">Source : <a href="#src-agreste-vin-2024">Agreste, 2024</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead" id="charentes">Charentes (Cognac)</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="value">− 35 %</div>
+          <p class="label">de production en 2024 par rapport à 2023</p>
+          <p class="source">Source : <a href="#src-agreste-vin-2024">Agreste, 2024</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="monde">
+      <h2 id="monde">Data Monde</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="value">56 %</div>
+          <p class="label">des régions viticoles du monde ne seraient plus adaptées à la vigne avec + 2 °C de réchauffement ; 24 % en plantant des cépages plus résistants</p>
+          <p class="source">Source : <a href="#src-morales">INRAE, PNAS, 2020</a></p>
+        </article>
+        <article class="card">
+          <div class="value">85 %</div>
+          <p class="label">des régions viticoles du monde ne seraient plus adaptées avec + 4 °C ; 58 % en changeant de cépages</p>
+          <p class="source">Source : <a href="#src-morales">INRAE, PNAS, 2020</a></p>
+        </article>
+        <article class="card">
+          <div class="value">≈ 90 %</div>
+          <p class="label">des régions viticoles côtières et de plaine du sud de l'Europe et de Californie risquent de disparaître d'ici 2100 au-delà de + 2 °C</p>
+          <p class="source">Source : <a href="#src-vanleeuwen">INRAE et Bordeaux Sciences Agro, 2024</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Sources</h2>
+    <ol>
+      <li id="src-agreste-vin-2025">Agreste, prévisions de récolte viticole 2025 au 1<sup>er</sup> octobre ; FranceAgriMer, <a href="https://www.franceagrimer.fr/sites/default/files/2025-11/NCO-NOT-VIN-2025-10.pdf">note de conjoncture vins, octobre 2025</a>.</li>
+      <li id="src-agreste-vin-2024">Agreste, prévisions de récolte viticole 2024 au 1<sup>er</sup> septembre, par bassin (relayé par <a href="https://reussir.fr/vigne/la-vendange-francaise-2024-estimee-393-millions-dhectolitres">Réussir</a>).</li>
+      <li id="src-mte-vendanges">Ministère de la Transition écologique, <a href="https://www.ecologie.gouv.fr/politiques-publiques/impacts-du-changement-climatique-agriculture-foret">Impacts du changement climatique : agriculture et forêt</a>.</li>
+      <li id="src-pleinchamp">Pleinchamp, <a href="https://www.pleinchamp.com/actualite/vendanges-24-jours-plus-tot-en-50-ans-le-casse-tete-climatique-des-vignobles-francais">Vendanges 24 jours plus tôt en 50 ans</a>, août 2026 (dates de vendanges à Châteauneuf-du-Pape et Tavel).</li>
+      <li id="src-morales">Morales-Castilla, García de Cortázar-Atauri, Cook et al. (dont INRAE), <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7022210">Diversity buffers winegrowing regions from climate change losses</a>, PNAS, 2020 (<a href="https://www.inrae.fr/sites/default/files/pdf/CP-Publication-Vigne-Changement-climatique_0.pdf">communiqué INRAE</a>).</li>
+      <li id="src-vanleeuwen">van Leeuwen, Sgubin, Bois et al. (INRAE, Bordeaux Sciences Agro), Climate change impacts and adaptations of wine production, Nature Reviews Earth &amp; Environment, 2024 (<a href="https://www.inrae.fr/sites/default/files/pdf/2024_cartographie-mondiale-evolution-regions-viticoles-changement-climatique.pdf">présentation INRAE</a>).</li>
+      <li id="src-labbe">Labbé, Pfister, Brönnimann et al., <a href="https://eos.org/articles/600-years-of-grape-harvests-document-20th-century-climate-change">The longest homogeneous series of grape harvest dates, Beaune 1354–2018</a>, Climate of the Past, 2019.</li>
+      <li id="src-inao-bordeaux">INAO, modification des cahiers des charges des AOC Bordeaux et Bordeaux supérieur autorisant des « variétés d'intérêt à fin d'adaptation », 2021.</li>
+      <li id="src-champagne">Comité Champagne, dates d'ouverture des vendanges 2026 (relayé par <a href="https://www.linfodurable.fr/climat/champagne-les-dates-douverture-des-vendanges-publiees-precocite-record-58544">L'info durable</a> et le <a href="https://www.journalduluxe.fr/fr/lifestyle/champagne-vendanges-precoces-2026">Journal du Luxe</a>).</li>
+      <li id="src-inrae-colmar">INRAE Colmar, travaux d'Éric Duchêne sur la phénologie de la vigne en Alsace (relayé par <a href="https://www.pleinchamp.com/actualite/en-alsace-top-depart-des-vendanges-le-19-aout-une-precocite-historique">Pleinchamp</a>).</li>
+      <li id="src-po-2023">Récolte 2023 dans les Pyrénées-Orientales (<a href="https://www.echodumardi.com/economie/2023-annee-difficile-pour-les-vignobles-du-sud/?print=pdf">L'Écho du mardi</a>) et estimations de pertes sur le littoral (<a href="https://www.idealwine.net/bilan-des-vendanges-2023/">iDealwine</a>) ; voir aussi <a href="https://www.reussir.fr/vigne/secheresse-la-derniere-crise-viticole-pour-les-pyrenees-orientales-et-le-sud-de-laude">Réussir</a>.</li>
+    </ol>
+
+    <section class="methodo" aria-labelledby="methodologie">
+      <h2 id="methodologie">Méthodologie</h2>
+      <p>Chaque chiffre est repris tel que publié par son auteur, arrondi pour la lisibilité. Les régions retenues sont les grands bassins viticoles français pour lesquels une donnée publique ou scientifique existe ; il n'existe pas de suivi climatique officiel et homogène d'une région à l'autre, donc les indicateurs diffèrent selon les régions.</p>
+
+      <h3>Data France et Monde</h3>
+      <ul>
+        <li><strong>Vigne</strong> : la date des vendanges suit presque exactement la hausse des températures ; le ministère l'utilise comme indicateur du réchauffement.</li>
+        <li><strong>Patrimoine : le vin</strong> : les volumes viennent des estimations de récolte du service statistique du ministère de l'Agriculture, révisées plusieurs fois dans l'année. La baisse de production a aussi des causes non climatiques, notamment l'arrachage de vignes aidé par l'État pour réduire les surplus.</li>
+        <li><strong>Vignobles menacés</strong> : aucune liste officielle des vignobles ou appellations menacés n'existe en France. Les chiffres viennent de deux études dirigées ou co-écrites par l'INRAE, qui modélisent les zones où la vigne pourra encore mûrir correctement selon le niveau de réchauffement. Une zone « plus adaptée » ne disparaît pas forcément : elle devra changer de cépages, de pratiques ou de type de vin. En France, l'étude de 2020 estime qu'à + 2 °C les pertes (22 %) seraient compensées par de nouvelles zones favorables (25 %), plus au nord ou en altitude.</li>
+      </ul>
+
+      <h3>Régions viticoles</h3>
+      <ul>
+        <li><strong>Dates de vendanges</strong> : c'est l'indicateur le plus ancien et le plus fiable du réchauffement dans le vignoble, car la maturité du raisin dépend surtout de la température. La série de Beaune, reconstituée à partir d'archives (comptes de salaires des vendangeurs, registres municipaux), est la plus longue au monde. Une partie de l'avance tient aussi aux choix des vignerons, qui cherchent des raisins plus mûrs.</li>
+        <li><strong>Production 2024 par région</strong> : estimations d'Agreste au 1<sup>er</sup> septembre 2024, comparées à 2023, une année de forte récolte. Les baisses viennent d'aléas météorologiques (gel, grêle, pluies favorisant le mildiou), qui ne sont pas tous attribuables au changement climatique.</li>
+        <li><strong>Champagne, Alsace et Vallée du Rhône</strong> : chiffres du Comité Champagne (l'interprofession), de chercheurs de l'INRAE de Colmar et de données publiques de dates de vendanges, relayés par la presse.</li>
+        <li><strong>Languedoc-Roussillon</strong> : faute de chiffre officiel publié pour 2023, les volumes viennent de la presse viticole ; ils sont à vérifier auprès d'Agreste Occitanie.</li>
+        <li><strong>Bordeaux</strong> : l'INAO, l'organisme public qui gère les appellations, autorise depuis 2021 des cépages d'adaptation dans la limite de 5 % de l'encépagement et 10 % de l'assemblage.</li>
+      </ul>
+
+      <h3>Mise à jour</h3>
+      <p>Valeurs les plus récentes disponibles en novembre 2026.</p>
+    </section>
+  </footer>
+  <script src="menu.js"></script>
+</body>
+</html>

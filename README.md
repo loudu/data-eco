@@ -1,10 +1,11 @@
 # Infos changement climatique
 
-Site statique présentant les chiffres clés du réchauffement climatique, sur quatre pages accessibles depuis le menu burger en haut à droite :
+Site statique présentant les chiffres clés du réchauffement climatique, sur cinq pages accessibles depuis le menu burger en haut à droite :
 
 - `index.html` : Climat (données France, Monde, Politique)
 - `economie.html` : Économie (coût des dégâts, énergies fossiles, investissements, compagnies pétrolières)
 - `culture.html` : Culture (cultures agricoles menacées, patrimoine)
+- `patrimoine-vin.html` : Patrimoine vin (vignoble français par région)
 - `fortunes.html` : Fortunes (grandes fortunes françaises et leur empreinte carbone)
 
 Le style commun est dans `style.css` et le comportement du menu dans `menu.js`.
@@ -17,7 +18,7 @@ Ouvrir `index.html` dans un navigateur. Aucun build n'est nécessaire ; la page 
 
 ## Mise à jour des chiffres
 
-Les valeurs sont écrites directement dans `index.html`, `economie.html`, `culture.html` et `fortunes.html`. Les publications de référence sont annuelles :
+Les valeurs sont écrites directement dans `index.html`, `economie.html`, `culture.html`, `patrimoine-vin.html` et `fortunes.html`. Les publications de référence sont annuelles :
 
 - Météo-France (bilan climatique) : janvier
 - Santé publique France (bilan chaleur) : fin d'hiver
